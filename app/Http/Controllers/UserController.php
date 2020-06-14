@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -13,7 +14,9 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        //Sea grego un comentario
+        $data= User::all();
+
     }
 
     /**
@@ -82,3 +85,6 @@ class UserController extends Controller
         //
     }
 }
+
+
+
